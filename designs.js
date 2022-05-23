@@ -1,5 +1,8 @@
 // Select color input
+const selectColor = document.getElementById('colorPicker');
 // Select size input
+const selectHeight = document.getElementById('inputHeight');
+const selectWidth = document.getElementById('inputWidth');
 
 // When size is submitted by the user, call makeGrid()
 
@@ -8,9 +11,9 @@ function makeGrid() {
   const drawGridRow = document.createElement('tr');
   
   //Drawing Grid Boxes
-  for (let i = 1; i <= (document.getElementById('inputHeight')); i++) {
+  for (let i = 1; i <= selectHeight; i++) {
     const drawGridColumn = document.createElement('td');
-    for (let j = 1; j <= (document.getElementById('inputWidth')); j++) {
+    for (let j = 1; j <= selectWidth; j++) {
       drawGridRow.appendChild(drawGridColumn);
     }
   }
