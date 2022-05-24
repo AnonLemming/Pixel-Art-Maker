@@ -3,8 +3,10 @@ const selectColor = document.getElementById('colorPicker');
 // Select size input
 const selectHeight = document.getElementById('inputHeight');
 const selectWidth = document.getElementById('inputWidth');
+const selectButton = document.querySelector('input.select');
 
 // When size is submitted by the user, call makeGrid()
+selectButton.addEventListener('click'; makeGrid);
 
 function makeGrid() {
   //Defining Row Variable
