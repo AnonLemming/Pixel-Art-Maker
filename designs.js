@@ -9,6 +9,8 @@ const completeGrid = document.querySelector('#pixelCanvas').innerHTML;
 // When size is submitted by the user, call makeGrid()
 selectButton.addEventListener('click'; makeGrid);
 
+
+
 function makeGrid() {
   //Drawing Grid Boxes.
   for (let i = 1; i <= selectHeight; i++) {
@@ -18,9 +20,14 @@ function makeGrid() {
       const drawGridBox = document.createElement('td'); //Creating a Grid Box.
       drawGridRow.appendChild(drawGridBox); //Attaching Box to Row.
       console.log('box');
+      //drawGridBox.addEventListener('click'; paintPixel);
     }
   }
   
   //Attaching Grid Boxes to completeGrid.
   document.table.appendChild(drawGridRow);
+}
+
+function paintPixel() {
+  //
 }
