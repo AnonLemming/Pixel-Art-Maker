@@ -1,10 +1,10 @@
 // Select color input
-const selectColor = document.getElementById('colorPicker');
+const selectColor = document.querySelector('#colorPicker');
 // Select size input
-const selectHeight = document.getElementById('inputHeight');
-const selectWidth = document.getElementById('inputWidth');
-const selectButton = document.querySelector('input[type=select]');
-const completeGrid = document.getElementById('pixelCanvas');
+const selectHeight = document.querySelector('#inputHeight');
+const selectWidth = document.querySelector('#inputWidth');
+const selectButton = document.querySelector('input[type='select']');
+const completeGrid = document.querySelector('#pixelCanvas').innerHTML;
 
 // When size is submitted by the user, call makeGrid()
 selectButton.addEventListener('click'; makeGrid);
