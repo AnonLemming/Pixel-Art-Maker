@@ -10,19 +10,17 @@ const completeGrid = document.querySelector('#pixelCanvas').innerHTML;
 selectButton.addEventListener('click'; makeGrid);
 
 function makeGrid() {
-  //Defining Row Variable.
-  const drawGridRow = document.createElement('tr');
-  
   //Drawing Grid Boxes.
   for (let i = 1; i <= selectHeight; i++) {
-    drawGridRow;
-    const drawGridColumn = document.createElement('td');
+    const drawGridRow = document.createElement('tr'); //Creating a Grid Row.
+    //console.log('row');
     for (let j = 1; j <= selectWidth; j++) {
-      drawGridRow.appendChild(drawGridColumn);
+      const drawGridBox = document.createElement('td'); //Creating a Grid Box.
+      drawGridRow.appendChild(drawGridBox); //Attaching Box to Row.
+      console.log('box');
     }
   }
   
   //Attaching Grid Boxes to completeGrid.
-  completeGrid.appendChild(drawGridRow);
-
+  document.table.appendChild(drawGridRow);
 }
